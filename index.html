@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <title>Estado clima</title>
+</head>
+<body id="fondo" onload="onLoad()">
+    <div class="aplicacion">
+        <div class="wrapper">
+                <header>
+                    <ul>
+                        <li>
+                            <input type="text" autocomplete="off" class="busqueda" placeholder="Buscar ciudad...">
+                        </li>
+                        <li> 
+                            <select name="" id="pais">
+                            <option value="">Seleccionar país</option>
+                            </select>
+                        </li>
+                        <li> 
+                            <select name="" id="estado">
+                            <option value="">Seleccionar estado</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select name="" id="ciudad">
+                            <option value="">Seleccionar ciudad</option>
+                            </select>
+                        </li>
+                    </ul>
+                </header>
+            <section class="localidad">
+                <div class="ciudad geoloc"></div>
+                <div class="fecha"></div>
+            </section>
+            <div class="datos">
+                <div class="temperatura"></div>
+                <div class="icono"></div>
+                <div class="clima"></div>
+                <div class="descripcion"></div>
+                <div class="max-min"></div>
+            </div>
+        </div>
+    </div>
+    <script src="src/main.js"></script>
+</body>
+</html>
